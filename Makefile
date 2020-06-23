@@ -10,23 +10,10 @@
 # It's still possible to build, tag and push images manually. Just use:
 #	make release-all
 
-IMAGE_NAME := fluent/fluentd-kubernetes
+IMAGE_NAME := juntossomosmais/fluentd-kubernetes
 ALL_IMAGES := \
 	v1.11/debian-elasticsearch7:v1.11.0-debian-elasticsearch7-1.0,v1.11-debian-elasticsearch7-1,v1-debian-elasticsearch \
-	v1.11/debian-elasticsearch6:v1.11.0-debian-elasticsearch6-1.0,v1.11-debian-elasticsearch6-1 \
-	v1.11/debian-loggly:v1.11.0-debian-loggly-1.0,v1.11-debian-loggly-1 \
-	v1.11/debian-logentries:v1.11.0-debian-logentries-1.0,v1.11-debian-logentries-1 \
-	v1.11/debian-cloudwatch:v1.11.0-debian-cloudwatch-1.0,v1.11-debian-cloudwatch-1 \
-	v1.11/debian-stackdriver:v1.11.0-debian-stackdriver-1.0,v1.11-debian-stackdriver-1 \
-	v1.11/debian-s3:v1.11.0-debian-s3-1.0,v1.11-debian-s3-1 \
-	v1.11/debian-syslog:v1.11.0-debian-syslog-1.0,v1.11-debian-syslog-1 \
-	v1.11/debian-forward:v1.11.0-debian-forward-1.0,v1.11-debian-forward-1 \
-	v1.11/debian-gcs:v1.11.0-debian-gcs-1.0,v1.11-debian-gcs-1 \
-	v1.11/debian-graylog:v1.11.0-debian-graylog-1.0,v1.11-debian-graylog-1 \
-	v1.11/debian-papertrail:v1.11.0-debian-papertrail-1.0,v1.11-debian-papertrail-1 \
-	v1.11/debian-logzio:v1.11.0-debian-logzio-1.0,v1.11-debian-logzio-1 \
-	v1.11/debian-kafka:v1.11.0-debian-kafka-1.0,v1.11-debian-kafka-2 \
-	v1.11/debian-kinesis:v1.11.0-debian-kinesis-1.0,v1.11-debian-kinesis-1
+	v1.11/debian-elasticsearch6:v1.11.0-debian-elasticsearch6-1.0,v1.11-debian-elasticsearch6-1
 
 #	<Dockerfile>:<version>,<tag1>,<tag2>,...
 
