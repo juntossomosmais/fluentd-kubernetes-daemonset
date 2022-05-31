@@ -16,28 +16,6 @@ ALL_IMAGES := \
 	v1.14/debian-elasticsearch6:v1.14.0-debian-elasticsearch6-1.0,v1.14-debian-elasticsearch6-1
 #	<Dockerfile>:<version>,<tag1>,<tag2>,...
 
-ARM64_IMAGES := \
-	v1.14/arm64/debian-azureblob:v1.14.6-debian-azureblob-arm64-1.0,v1.14-debian-azureblob-arm64-1 \
-	v1.14/arm64/debian-elasticsearch7:v1.14.6-debian-elasticsearch7-arm64-1.0,v1.14-debian-elasticsearch7-arm64-1,v1-debian-elasticsearch-arm64 \
-	v1.14/arm64/debian-elasticsearch6:v1.14.6-debian-elasticsearch6-arm64-1.0,v1.14-debian-elasticsearch6-arm64-1 \
-	v1.14/arm64/debian-opensearch:v1.14.6-debian-opensearch-arm64-1.1,v1.14-debian-opensearch-arm64-1 \
-	v1.14/arm64/debian-loggly:v1.14.6-debian-loggly-arm64-1.0,v1.14-debian-loggly-arm64-1 \
-	v1.14/arm64/debian-logentries:v1.14.6-debian-logentries-arm64-1.0,v1.14-debian-logentries-arm64-1 \
-	v1.14/arm64/debian-cloudwatch:v1.14.6-debian-cloudwatch-arm64-1.0,v1.14-debian-cloudwatch-arm64-1 \
-	v1.14/arm64/debian-stackdriver:v1.14.6-debian-stackdriver-arm64-1.0,v1.14-debian-stackdriver-arm64-1 \
-	v1.14/arm64/debian-s3:v1.14.6-debian-s3-arm64-1.0,v1.14-debian-s3-arm64-1 \
-	v1.14/arm64/debian-syslog:v1.14.6-debian-syslog-arm64-1.0,v1.14-debian-syslog-arm64-1 \
-	v1.14/arm64/debian-forward:v1.14.6-debian-forward-arm64-1.0,v1.14-debian-forward-arm64-1 \
-	v1.14/arm64/debian-gcs:v1.14.6-debian-gcs-arm64-1.0,v1.14-debian-gcs-arm64-1 \
-	v1.14/arm64/debian-graylog:v1.14.6-debian-graylog-arm64-1.0,v1.14-debian-graylog-arm64-1 \
-	v1.14/arm64/debian-papertrail:v1.14.6-debian-papertrail-arm64-1.0,v1.14-debian-papertrail-arm64-1 \
-	v1.14/arm64/debian-logzio:v1.14.6-debian-logzio-arm64-1.0,v1.14-debian-logzio-arm64-1 \
-	v1.14/arm64/debian-kafka:v1.14.6-debian-kafka-arm64-1.0,v1.14-debian-kafka-arm64-1 \
-	v1.14/arm64/debian-kafka2:v1.14.6-debian-kafka2-arm64-1.0,v1.14-debian-kafka2-arm64-1 \
-	v1.14/arm64/debian-kinesis:v1.14.6-debian-kinesis-arm64-1.0,v1.14-debian-kinesis-arm64-1
-
-ALL_IMAGES := $(X86_IMAGES) $(ARM64_IMAGES)
-
 comma := ,
 empty :=
 space := $(empty) $(empty)
