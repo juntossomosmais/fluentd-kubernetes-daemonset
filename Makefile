@@ -12,8 +12,8 @@
 
 IMAGE_NAME := juntossomosmais/fluentd-kubernetes
 ALL_IMAGES := \
-	v1.11/debian-elasticsearch7:v1.11.0-debian-elasticsearch7-1.0,v1.11-debian-elasticsearch7-1,v1-debian-elasticsearch \
-	v1.11/debian-elasticsearch6:v1.11.0-debian-elasticsearch6-1.0,v1.11-debian-elasticsearch6-1
+	v1.14/debian-elasticsearch7:v1.14.0-debian-elasticsearch7-1.0,v1.14-debian-elasticsearch7-1,v1-debian-elasticsearch \
+	v1.14/debian-elasticsearch6:v1.14.0-debian-elasticsearch6-1.0,v1.14-debian-elasticsearch6-1
 #	<Dockerfile>:<version>,<tag1>,<tag2>,...
 
 ARM64_IMAGES := \
