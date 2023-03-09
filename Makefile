@@ -6,8 +6,13 @@
 # It's still possible to build, tag and push images manually. Just use:
 #	make release-all
 
-IMAGE_NAME := fluent/fluentd-kubernetes
+IMAGE_NAME := juntossomosmais/fluentd-kubernetes
 X86_IMAGES := \
+	v1.18/debian-elasticsearch8:v1.18.0-debian-elasticsearch8-amd64-1.4,v1.18-debian-elasticsearch8-amd64-1 \
+	v1.18/debian-elasticsearch7:v1.18.0-debian-elasticsearch7-amd64-1.4,v1.18-debian-elasticsearch7-amd64-1,v1-debian-elasticsearch-amd64 \
+	v1.18/debian-opensearch:v1.18.0-debian-opensearch-amd64-1.4,v1.18-debian-opensearch-amd64-1
+
+STD_X86_IMAGES := \
 	v1.18/debian-azureblob:v1.18.0-debian-azureblob-amd64-1.4,v1.18-debian-azureblob-amd64-1 \
 	v1.18/debian-elasticsearch8:v1.18.0-debian-elasticsearch8-amd64-1.4,v1.18-debian-elasticsearch8-amd64-1 \
 	v1.18/debian-elasticsearch7:v1.18.0-debian-elasticsearch7-amd64-1.4,v1.18-debian-elasticsearch7-amd64-1,v1-debian-elasticsearch-amd64 \
@@ -47,7 +52,8 @@ ARM64_IMAGES := \
 	v1.18/arm64/debian-kafka2:v1.18.0-debian-kafka2-arm64-1.4,v1.18-debian-kafka2-arm64-1 \
 	v1.18/arm64/debian-kinesis:v1.18.0-debian-kinesis-arm64-1.4,v1.18-debian-kinesis-arm64-1
 
-ALL_IMAGES := $(X86_IMAGES) $(ARM64_IMAGES)
+# ALL_IMAGES := $(X86_IMAGES) $(ARM64_IMAGES)
+ALL_IMAGES := $(X86_IMAGES)
 
 comma := ,
 empty :=
